@@ -1,0 +1,47 @@
+[
+    {
+        "name": "ncrousset/piechart",
+        "version": "v2.0.1",
+        "version_normalized": "2.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ncrousset/PieChart.git",
+            "reference": "e9010a82d2e6086dc58eacd68a35c8b83249b497"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ncrousset/PieChart/zipball/e9010a82d2e6086dc58eacd68a35c8b83249b497",
+            "reference": "e9010a82d2e6086dc58eacd68a35c8b83249b497",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2014-01-25T22:44:04+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "SamChristy\\PieChart\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Sam Christy",
+                "email": "sam_christy@hotmail.co.uk",
+                "homepage": "https://github.com/SamChristy"
+            }
+        ],
+        "description": "A simple class for drawing pie charts with ImageMagick or GD in PHP.",
+        "homepage": "https://github.com/SamChristy/PieChart",
+        "keywords": [
+            "chart",
+            "graphics",
+            "pie"
+        ]
+    }
+]

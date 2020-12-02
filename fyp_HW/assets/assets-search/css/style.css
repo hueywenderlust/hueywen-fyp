@@ -1,0 +1,261 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/**************
+* VARIABLES
+**************/
+/**************
+* STYLES
+**************/
+/**
+ * Search 
+ */
+.container {
+  position: relative;
+  margin-bottom: 16px;
+  line-height: 0;
+}
+
+.container--flex {
+  display: flex;
+  /*justify-content: center;*/
+
+}
+
+.input--search {
+  font-size: 1em;
+  padding: .5em;
+  background-color: white;
+  color: #777;
+  border: 2px solid transparent;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  flex-grow: 1;
+}
+@media all and (min-width: 37.5em) {
+  .input--search {
+    font-size: 1.25em;
+  }
+}
+.input--search::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.35);
+}
+.input--search:focus {
+  outline: 5px auto #7D03FF;
+  outline-offset: -2px;
+}
+
+.button-group {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: -5px;
+}
+
+.flexbox .button-group {
+  margin-left: -1px;
+}
+
+.button {
+  display: inline-block;
+  padding: .5em;
+  border: none;
+  font-size: 1em;
+  vertical-align: top;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #777;
+  transition: background-color .3s;
+  text-align: center;
+}
+@media all and (min-width: 37.5em) {
+  .button {
+    font-size: 1.25em;
+  }
+}
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.button:focus {
+  outline: none;
+}
+
+.button--toolbar {
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  border-radius: 0;
+  text-transform: lowercase;
+}
+
+.button--advanced__text {
+  display: none;
+}
+@media all and (min-width: 23em) {
+  .button--advanced__text {
+    display: inline;
+  }
+}
+
+.button--search {
+  margin-left: -5px;
+  background-color: #0192d0;
+  color: white;
+}
+.button--search:hover {
+  background-color: #016e9d;
+}
+
+/**
+ * Search Panel
+ */
+.panel-advanced-search {
+  margin: 0 0 16px;
+  padding: 0.5em;
+  border: 1px solid #a1a1a1;
+  overflow: auto;
+}
+
+body {
+  font: 100%/1.5 "Clan OT", HelveticaNeue, Helvetica, Arial, sans-serif;
+  padding: 1em;
+}
+
+.heading--form {
+  font-size: 2rem;
+  margin: 0 0 0 .25em;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.label {
+  display: block;
+  padding-bottom: 0.2rem;
+  font-weight: normal;
+  color: #777;
+}
+
+.input {
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: .5rem;
+}
+
+.button--secondary {
+  color: white;
+  background: #777;
+}
+
+.button--small {
+  border-radius: 2px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding: 0.5em;
+}
+
+.button--positive {
+  background-color: #3fba47;
+}
+.button--positive:hover {
+  background-color: #329438;
+}
+
+.fieldset__buttons {
+  margin-bottom: 0.5em;
+}
+
+.list {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.listbox {
+  display: inline-block;
+  max-height: 100px;
+  width: 100%;
+  overflow-y: scroll;
+}
+.listbox::-webkit-scrollbar {
+  width: 7px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.listbox::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #777;
+  -webkit-box-shadow: 0 0 1px #777;
+}
+
+.listbox li {
+  margin-bottom: 8px;
+}
+.listbox li:last-child {
+  margin: 0;
+}
+
+@media all and (min-width: 50em) {
+  .form__actions--right {
+    margin-top: 2em;
+    text-align: right;
+  }
+}
+
+.date-picker {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.3em;
+}
+
+/***********
+* grids
+***********/
+@media (min-width: 46.8em) {
+  .g-2up > .gi {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 46.8em) {
+  .g-2up > .gi:nth-of-type(2n+1) {
+    clear: left;
+  }
+}
+
+.gi {
+  padding: 0.5em;
+}
+@media (min-width: 46.8em) {
+  .gi {
+    float: left;
+  }
+}
+
+@media (min-width: 46.8em) {
+  .g-3up > .gi {
+    float: left;
+    width: 33.3333%;
+  }
+}
+@media (min-width: 46.8em) {
+  .g-3up > .gi:nth-of-type(3n+1) {
+    clear: left;
+  }
+}
+
+.gi {
+  padding: 0.5em;
+}
+@media (min-width: 46.8em) {
+  .gi {
+    float: left;
+  }
+}
+
+.is-hidden {
+  display: none;
+}

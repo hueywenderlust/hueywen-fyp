@@ -1,0 +1,5 @@
+{
+    "require": {
+        "ncrousset/piechart": "^2.0"
+    }
+}
